@@ -27,7 +27,7 @@ export default function Header() {
               width={50}
               height={12}
             />
-            <p className="pl-2 text-2xl">Money</p>
+            <p className="pl-2 text-2xl">FinVue</p>
           </div>
           <div className="lg:hidden ml-80 fixed">
             <button onClick={() => toggle()}>
