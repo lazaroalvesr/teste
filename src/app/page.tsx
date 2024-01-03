@@ -1,9 +1,13 @@
-import Header from "./components/Header";
+import { Avaliacao } from "./components/Avaliacao";
+import { Choice } from "./components/Choice";
+import { Main } from "./components/Main";
 
 export default function Home() {
   return (
     <div>
-      <Header />
+      <Main />
+      <Avaliacao />
+      <Choice />
     </div>
   )
 }

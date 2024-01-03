@@ -16,11 +16,10 @@ export default function Header() {
 
 
   return (
-    <div className="w-full">
-      <header className="
-      lg:max-w-6xl m-auto mt-4 flex items-center lg:justify-between">
+    <div className="w-full border-b border-neutral-300">
+      <header className="pb-3 lg:max-w-6xl m-auto mt-4 lg:flex lg:items-center lg:justify-between">
         <div className="flex items-center lg:justify-between ml-3 lg:ml-0" >
-          <div className="flex items-center ">
+          <div className="flex items-center">
             <Image
               src="/img/icone.png"
               alt="Icone Money"
@@ -29,7 +28,7 @@ export default function Header() {
             />
             <p className="pl-2 text-2xl">FinVue</p>
           </div>
-          <div className="lg:hidden ml-80 fixed">
+          <div className="lg:hidden absolute right-6">
             <button onClick={() => toggle()}>
               <CiMenuFries />
             </button>
@@ -55,7 +54,7 @@ export default function Header() {
           </div>
         </div>
         <div className={`flex lg:static lg:h-auto ${ativaMenu ? 'absolute top-72 left-32' : "h-0 overflow-hidden"}`}>
-          <div>
+          {/* <div>
             <SignedIn>
               <UserButton />
             </SignedIn>
@@ -68,7 +67,7 @@ export default function Header() {
                 </SignInButton>
               </SignedOut>
             </div>
-          </div>
+          </div> */}
         </div >
       </header>
     </div>
