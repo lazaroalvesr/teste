@@ -6,10 +6,18 @@ import { VscAccount } from "react-icons/vsc";
 export function Choice() {
   return (
     <section>
-      <div className="max-w-7xl m-auto grid  grid-cols-1 lg:grid-cols-2 mt-20">
+      <div className="max-w-7xl m-auto grid  grid-cols-1 lg:grid-cols-2 mt-24">
         <div className="max-3xl ml-12 lg:ml-0 ">
-          <h1 className="text-6xl lg:w-72">Nos temos a escolha de estrategia</h1>
-          <p>ok</p>
+          <h1 className="text-6xl lg:w-[450px] mt-12">Nos temos a escolha de estrategia</h1>
+          <p
+            className="w-72 pt-6"
+          >Nós temos a missão de trazer transparência para as suas finanças</p>
+          <button className=" mt-12 flex 
+                items-center justify-center
+                w-56 border-gray-400 border  bg-blue-500  text-gray-50
+                 rounded-3xl py-3">
+            Saber Mais
+          </button>
         </div>
         <div className="grid grid-cols-1 gap-6 lg:gap-0 lg:grid-cols-2 mt-12 ml-12 lg:ml-0">
           <div>
