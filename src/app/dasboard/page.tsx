@@ -2,7 +2,6 @@
 
 import { api } from "@/api/api";
 import { FormEvent, useEffect, useRef, useState } from "react";
-import { FaHandPaper } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 
 interface moneyProps {

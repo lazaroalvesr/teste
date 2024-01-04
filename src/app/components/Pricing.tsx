@@ -8,10 +8,10 @@ export default function Pricing() {
         <div className="lg:ml-80 ml-8">
           <p className="bg-blue-100 lg:ml-80 p-2 mb-5 rounded-md w-16">Preço</p>
           <h1 className="text-5xl font-semibold">Planos para todos os orçamentos</h1>
-          <p className="lg:w-[500px] lg:text-center text-start mt-6 lg:ml-32">Quer você seja uma pequena empresa ou uma grande corporação, temos o plano certo para você</p>
+          <p className="lg:w-[500px] lg:text-center text-start mt-6 lg:ml-32 w-80">Quer você seja uma pequena empresa ou uma grande corporação, temos o plano certo para você</p>
         </div>
         <div className="mt-20 flex lg:flex-row gap-12 flex-col  mx-2 lg:mx-0 ">
-          <div className="w-96 bg-gray-50 p-8 rounded-xl drop-shadow-md">
+          <div className="lg:w-96 w-[360px] bg-gray-50 p-8 rounded-xl drop-shadow-md">
             <h1 className="text-3xl pb-4 text-blue-500">Pessoal</h1>
             <p className="pb-7">Orçamento integrado e aproveite melhor seu dinheiro com sua conta padrão</p>
             <p><span className="text-blue-500 text-3xl">R$ 0</span> / mês</p>

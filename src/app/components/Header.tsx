@@ -16,18 +16,18 @@ export default function Header() {
 
   return (
     <div className="w-full border-b border-neutral-300">
-      <header className="pb-3 lg:max-w-6xl m-auto mt-4 lg:flex lg:items-center lg:justify-between">
-        <div className="flex items-center lg:justify-between ml-3 lg:ml-0" >
-          <div className="flex items-center">
-            <Link href="/">
+      <header className="pb-3 lg:max-w-6xl m-auto mt-4 flex lg:items-center lg:justify-between">
+        <div className="flex w-32 items-center lg:justify-between" >
+          <div className=" ">
+            <Link href="/" className="flex items-center">
               <Image
                 src="/img/icone.png"
                 alt="Icone Money"
                 width={50}
                 height={12}
               />
+              <p className="pl-2 text-2xl">FinVue</p>
             </Link>
-            <p className="pl-2 text-2xl">FinVue</p>
           </div>
           <div className="lg:hidden absolute right-6">
             <button onClick={() => toggle()}>
@@ -35,7 +35,7 @@ export default function Header() {
             </button>
           </div>
           <div className=" lg:ml-12">
-            <ul className={`flex lg:gap-4 lg:static lg:h-auto ${ativaMenu ? 'absolute left-32 bg-white top-32 flex-col ' : "h-0 overflow-hidden"}`}>
+            <ul className={`flex gap-4 lg:static lg:h-auto ${ativaMenu ? 'absolute  bg-gray-50 left-0 w-full text-center top-20 h-96 pt-32 flex-col z-50' : "h-0 overflow-hidden"}`}>
               <li className="text-3xl lg:text-sm">
                 <Link href={'/'}>
                   Personal
@@ -54,9 +54,6 @@ export default function Header() {
             </ul>
           </div>
         </div>
-        <div className={`flex lg:static lg:h-auto ${ativaMenu ? 'absolute top-72 left-32' : "h-0 overflow-hidden"}`}>
-         
-        </div >
       </header>
     </div>
   )

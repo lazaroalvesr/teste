@@ -9,7 +9,7 @@ import { GiBrazilFlag } from "react-icons/gi";
 export default function Footer() {
   return (
     <section>
-      <div className="bg-blue-500 relative text-gray-50 pb-12 lg:pb-0 w-full  mt-12">
+      <div className="bg-blue-500 relative text-gray-50 pb-12 lg:pb-0 w-full mt-12">
         <div className="max-w-7xl m-auto pt-20 flex">
           <div className="flex lg:gap-32 flex-col lg:flex-row ml-12 gap-12 lg:ml-0">
             <div className="flex flex-col">
