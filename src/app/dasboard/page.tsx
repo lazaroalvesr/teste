@@ -58,55 +58,52 @@ export default function Page() {
     }
   }
 
-  
-
-  
-    return <div
-      className="max-w-6xl m-auto text-xl">
-      <div className="flex  pt-4">
-      </div>
 
 
-      <div className="bg-gray-300 w-[400px] rounded-md ">
-        <form className="flex flex-col mt-12  p-4" onSubmit={handleSubmit}>
-          <label>Entrada:</label>
-          <input type="text" placeholder="Digite um valor"
-            className="w-56 mb-8 mt-2 flex focus:outline-none p-2 rounded-md"
-            ref={entradaRef} />
 
-          <label>Tipo:</label>
-          <input type="text" placeholder="Digite o tipo da Entrada"
-            className="w-56 mt-2 flex focus:outline-none p-2 rounded-md"
-            ref={tipoRef} />
+  return <div
+    className="max-w-6xl m-auto text-xl">
 
-          <input type="submit" value="Cadastrar"
-            className="w-32  cursor-pointer mt-5  bg-gray-400 p-3 rounded-md" />
-        </form>
-      </div>
+    <div className="bg-gray-300 lg:w-[400px] w-96 rounded-md ">
+      <form className="flex flex-col mt-12  p-4" onSubmit={handleSubmit}>
+        <label>Entrada:</label>
+        <input type="text" placeholder="Digite um valor"
+          className="w-56 mb-8 mt-2 flex focus:outline-none p-2 rounded-md"
+          ref={entradaRef} />
 
-      <div className="lg:max-w-6xl mt-20 text-2xl bg-gray-100 m-auto mb-3 ">
-        <div className="flex flex-col lg:flex-row gap-32 bg-gray-200 w-full rounded-md  p-2">
-          <div>
-            <div className="flex">
-              <ul className="flex gap-[80px] lg:flex-row lg:gap-[330px]">
-                <li>Saldo</li>
-                <li>Tipo</li>
-                <li>Data</li>
-              </ul>
-            </div>
+        <label>Tipo:</label>
+        <input type="text" placeholder="Digite o tipo da Entrada"
+          className="w-56 mt-2 flex focus:outline-none p-2 rounded-md"
+          ref={tipoRef} />
+
+        <input type="submit" value="Cadastrar"
+          className="w-32  cursor-pointer mt-5  bg-gray-400 p-3 rounded-md" />
+      </form>
+    </div>
+
+    <div className="lg:max-w-6xl mt-20 text-2xl bg-gray-100 m-auto mb-3 ">
+      <div className="flex flex-col lg:flex-row gap-32 bg-gray-200 w-full rounded-md  p-2">
+        <div>
+          <div className="flex">
+            <ul className="flex gap-[80px] lg:flex-row lg:gap-[330px]">
+              <li>Saldo</li>
+              <li>Tipo</li>
+              <li>Data</li>
+            </ul>
           </div>
         </div>
-        <div className="relative">
-          {Customer.map(({ id, entrada, tipo }) => (
-            <div key={id} className="grid grid-cols-3  p-2">
-              <p>R$ {entrada}</p>
-              <p>{tipo}</p>
-              <p>Data</p>
-                <button className="ml-[900px] -mt-12" onClick={() => handleDelete(id)}><MdDelete /></button>
-            </div>
-          ))}
-        </div>
       </div>
-    </div>;
-  }
+      <div className="relative">
+        {Customer.map(({ id, entrada, tipo }) => (
+          <div key={id} className="grid grid-cols-3  p-2">
+            <p className="lg:text-xl text-base">R$ {entrada}</p>
+            <p className="lg:text-xl text-base"> {tipo}</p>
+            <p className="lg:text-xl text-base"> Data</p>
+            <button className="lg:ml-[900px] ml-80 -mt-6 lg:-mt-12" onClick={() => handleDelete(id)}><MdDelete /></button>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>;
+}
 
