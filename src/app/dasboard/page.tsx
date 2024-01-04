@@ -1,7 +1,6 @@
 'use client'
 
 import { api } from "@/api/api";
-import { useUser } from "@clerk/nextjs";
 import { FormEvent, useEffect, useRef, useState } from "react";
 import { FaHandPaper } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
@@ -13,7 +12,6 @@ interface moneyProps {
 }
 
 export default function Page() {
-  const { isSignedIn, user, isLoaded } = useUser();
   const [Customer, setCustomer] = useState<moneyProps[]>([])
   const entradaRef = useRef<HTMLInputElement | null>(null)
   const tipoRef = useRef<HTMLInputElement | null>(null)
@@ -61,15 +59,12 @@ export default function Page() {
     }
   }
 
-  if (!isLoaded) {
-    return null;
-  }
+  
 
-  if (isSignedIn) {
+  
     return <div
       className="max-w-6xl m-auto text-xl">
       <div className="flex  pt-4">
-        Olá {user.fullName} <FaHandPaper size="32" className="ml-4 text-blue-400" />
       </div>
 
 
@@ -115,4 +110,4 @@ export default function Page() {
       </div>
     </div>;
   }
-}
+
