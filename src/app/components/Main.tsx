@@ -25,7 +25,7 @@ export function Main() {
                 <button className="
                 w-40 bg-blue-500 text-gray-50 
                 px-2 py-4 rounded-3xl">
-                  <Link href="https://driving-ibex-15.accounts.dev/sign-up#/?redirect_url=http%3A%2F%2Flocalhost%3A3000%2F%23__clerk_db_jwt%5BeyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJkZXYiOiJkdmJfMmFCVzJOVXZmdU9lck9DZ01ZOWp3UWtjNWU3IiwiaWQiOiJjbGllbnRfMmFHUlhkN0hnNXZSRXBJcXFJTmc5T0lRdmVCIiwicm90YXRpbmdfdG9rZW4iOiJncXNzbHN4OHhncHd0OHZ6dXg0MWFzNWVwZWFic2UybWQ2NDcyMGQzIn0.o4c0dTbQK9_eB_Q1clgVT3WXa3XADOXqECli7fRIXGIjGStlAfyusYrplFJan-O73Eg5PEK2H5AvDJhkywbbT4kppLN6hhfRVG6rzxnRfb4lDEkgcFR4GDh8J6e8KjVXZY-95hseELu0o1XrUYt8Xndg_CbyqNF_V6G4gYkdGamekTr-YuK57pbfXkXPBA4ZgpWKvpVtlhfQ8_1QYK0HA9nag1t76zeGFmjw4SxVVI3c3fQdUMgQog00cB1Gm7Qt94km6K4KuwTtO4Vf8o3imozf0WSDUa0uOZsucbKVO41MTlgePNpKrrW43Br_Mz1_o9T9B0iwwckhBmZXg4aZ7Q%5D">
+                  <Link href="/dasboard">
                     Começe Agora
                   </Link>
                 </button>
