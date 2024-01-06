@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
-        <link rel="shortcut icon" href="icone.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="img/icone.png" type="image/x-icon" />
       </head>
       <body className={inter.className}>
         <Header />
